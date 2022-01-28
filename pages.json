@@ -1,0 +1,60 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/home/home",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/application/application",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/mine/mine",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "露天煤矿信息管理平台",
+		"navigationBarBackgroundColor": "#0080d1",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"selectedColor": "#007fd1",
+		"backgroundColor": "#FFFFFF",
+		"color": "#ccc",
+		"list": [{
+				"text": "首页",
+				"pagePath": "pages/home/home",
+				"iconPath": "static/toolbar/home-off.png",
+				"selectedIconPath": "static/toolbar/home-on.png"
+			},
+			{
+				"text": "应用",
+				// "pagePath": "pages/application/tag",
+				"pagePath": "pages/application/appList",
+				"iconPath": "static/toolbar/app-off.png",
+				"selectedIconPath": "static/toolbar/app-on.png"
+			},
+			{
+				"text": "我的",
+				"pagePath": "pages/mine/mine",
+				"iconPath": "static/toolbar/me-off.png",
+				"selectedIconPath": "static/toolbar/me-on.png"
+			}
+		]
+	}
+}
